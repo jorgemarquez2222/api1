@@ -9,9 +9,9 @@ type Memory struct {
 	Persons   map[int]model.Person
 }
 
-func NewMemory(m *Memory) *Memory {
+func NewMemory() Memory {
 	persons := make(map[int]model.Person)
-	return &Memory{
+	return Memory{
 		currentID: 0,
 		Persons:   persons,
 	}
